@@ -1,8 +1,7 @@
-let IS_PROD = true;
-const server = IS_PROD ?
-    https://videomeetprojectbackend.onrender.com ;
+const IS_PROD = true;
 
-    "http://localhost:8080"
-
+const server = IS_PROD
+  ? "https://videomeetprojectbackend.onrender.com"
+  : "http://localhost:8080";
 
 export default server;
